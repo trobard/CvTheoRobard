@@ -1,0 +1,311 @@
+html {
+    
+}
+body {
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    width: 100%;
+}
+
+.contenu {
+   width:100%;
+}
+
+
+@media screen and (max-width: 801px) {
+    .head {
+        width: 100%;
+        flex: 0 0 100vw;
+        height: 20%;
+        background-color: #D1C1A4;
+        color: white;
+    }
+
+    .head-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .photo {
+        width: 30%;
+        margin: 5%;
+    }
+
+    .photo_cv {
+        width: 100%
+    }
+
+    .nom_metier {
+        width: 60%;
+        align-self: center;
+        text-align: left;
+    }
+
+    .nom_prenom{
+        font-size:large;
+    }
+
+    .nom_metier{
+        font-size: small;
+    }
+
+    .information-adress {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: small;
+        align-items: center;
+        color: black;
+        justify-content:center;
+    }
+
+    .linkedin {
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .mail {
+        margin: 2%;
+    }
+
+    .telephone {
+        margin: 2%;
+    }
+
+    .adresse{
+        margin: 2%;
+    }
+
+    .autre {
+        margin: 2%;
+    }
+
+    .disponibilite {
+        margin: 2%;
+        justify-content:end;
+    }
+
+    .icone {
+        height: 5em;
+        max-width: 7em;
+    }
+
+    .titre-categorie {
+        background-color: #D1C1A4;
+        color: white;
+        padding: 1em;
+        margin: 0;
+        font-size: large;
+        margin:5%;
+    }
+
+    .detail {
+        margin-right: 7%;
+        margin-left: 7%;
+        font-size: small;
+    }
+
+    .text {
+        text-align: justify;
+    }
+
+    .titre-bloc{
+        font-size:medium;
+        margin-top:3%;
+        margin-bottom:3%;
+    }
+
+    .languages{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        align-items:center;
+        justify-content:space-around;
+    }
+
+    .footer {
+        margin-top:5%;
+        background-color: #D1C1A4;
+        padding: 1em;
+    }
+
+    .footer-description {
+        font-size: small;
+        text-align: center;
+    }
+
+    .footer-download{
+        font-size:small;
+        text-align:center;
+    }
+}
+    @media screen and (min-width: 801px) {
+
+        .contenu {
+            margin: 0px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-column-gap: 2%;
+            grid-row-gap: 2%;
+        }
+
+        .head {
+            height: 100%;
+            grid-area: 1 / 1 / 2 / 4;
+            background-color: #D1C1A4;
+            color: white;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+
+        .head-row {
+            grid-area: 1 / 1 / 2 / 3;
+            display: flex;
+            flex-direction: row;
+            justify-content:left;
+        }
+
+        .langues {
+            grid-area: 2 / 3 / 3 / 4;
+        }
+
+        .experience-professionnelle {
+            grid-area: 2 / 1 / 3 / 3;
+        }
+
+        .formations {
+            grid-area: 3 / 1 / 5 / 3;
+        }
+
+        .languages_informatique {
+            grid-area: 3 / 3 / 5 / 4;
+        }
+
+        .competences {
+            grid-area: 5 / 1 / 6 / 3;
+        }
+
+        .centre_interet {
+            grid-area: 5 / 3 / 6 / 4;
+        }
+
+        .photo {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .photo_cv {
+            width: 80%;
+            margin: 5%;
+        }
+
+        .nom_metier {
+            font-size: xx-large;
+            text-align: left;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .metier {
+            font-size: x-large;
+        }
+
+        .informations {
+            margin-top: auto;
+            margin-bottom: auto;
+            color: black;
+            text-align: right;
+            margin-right: 5%;
+            grid-area: 1 / 3 / 2 / 4;
+        }
+
+        .img_linkedin {
+            width: 10%;
+        }
+
+        .titre-categorie {
+            background-color: #D1C1A4;
+            color: white;
+            padding: 1em;
+            margin: 0;
+            font-size: x-large;
+        }
+
+        .section {
+            margin: 1em;
+            padding: 0;
+            border: none;
+            border-block-color: black;
+        }
+
+        .detail {
+            margin: 1em;
+        }
+
+        .linkedin{
+            margin:3%;
+        }
+
+        .mail {
+            margin: 3%;
+        }
+
+        .telephone {
+            margin: 3%;
+        }
+
+        .adresse {
+            margin: 3%;
+        }
+
+        .autre {
+            margin: 3%;
+        }
+
+        .disponibilite {
+            margin: 3%;
+        }
+
+        .text {
+            text-align: justify;
+        }
+
+        .titre-bloc {
+            font-size: large;
+        }
+
+        .languages {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .icone {
+            height: 5em;
+            max-width: 7em;
+            margin: 5px;
+        }
+
+        .footer {
+            grid-area: 6 / 1 / 6 / 4;
+            background-color: #D1C1A4;
+            padding: 1em;
+        }
+
+        .footer-description {
+            float: left;
+            margin: 1em;
+        }
+
+        .footer-download {
+            margin: 1em;
+            float: right;
+        }
+    }
